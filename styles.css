@@ -1,0 +1,4 @@
+.hero {
+    background-color: #221D31;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
