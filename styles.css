@@ -27,6 +27,21 @@ body {
     font-size: 2rem;
 }
 
+.nav-selected {
+    text-decoration: underline;
+    text-decoration-color: #FF17BE;
+    text-underline-offset: -0.25rem;
+    text-decoration-thickness: .5rem;
+    text-decoration-skip-ink: none;
+}
+
+.nav-link {
+    text-decoration: underline;
+    text-decoration-color: #FF17BE;
+    text-underline-offset: -0.25rem;
+    text-decoration-thickness: .5rem;
+}
+
 /* HERO SECTION */
 
 .hero {
@@ -40,6 +55,8 @@ background: linear-gradient(124deg, rgba(34,29,49,1) 0%, rgba(58,6,101,1) 100%);
     font-weight: 400;
     font-size: 2rem;
     color: #FFE9F3;
+    
+
 }
 
 .bb-name {
@@ -48,11 +65,27 @@ background: linear-gradient(124deg, rgba(34,29,49,1) 0%, rgba(58,6,101,1) 100%);
 
 .hero-title {
     font-size: 3rem;
+
 }
 
+@media screen and (min-width: 850px) {
+    .hero-title {
+        letter-spacing: .7rem;
+    margin-bottom: 1rem;
+    }
+}
+
+
+
 .hero-links {
-    font-size: 2rem;
+    font-size: 1.8rem;
     /* grid-column: 10; */
+}
+
+@media screen and (max-width: 640px) {
+    .hero-links {
+        font-size: 1.4rem
+    }
 }
 
 .hero-anchor {
@@ -76,6 +109,18 @@ background: linear-gradient(124deg, rgba(34,29,49,1) 0%, rgba(58,6,101,1) 100%);
     font-size: 4rem;
 }
 
+
+
+.content p {
+    margin-bottom: 1rem;
+    line-height: 1.6rem;
+}
+
+.content h3 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
 
 /* CONTACT */
 
