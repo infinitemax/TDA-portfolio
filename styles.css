@@ -1,4 +1,97 @@
+/* 
+
+Colours: 
+- grad start: #FF8197
+- grad end: #FF17BE
+- background: #221D31
+- light text: #FFE9F3
+
+*/
+
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #e9dfe8;
+}
+
+/* NAVBAR */
+
+.nav-bar {
+    background-color: rgba(34,29,49,.9);
+    /* box-shadow: ; */
+}
+
+.nav-title {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+/* HERO SECTION */
+
 .hero {
-    background-color: #221D31;
+    background: rgb(34,29,49);
+background: linear-gradient(124deg, rgba(34,29,49,1) 0%, rgba(58,6,101,1) 100%);
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.hero-text {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #FFE9F3;
+}
+
+.bb-name {
+    white-space: nowrap;
+}
+
+.hero-title {
+    font-size: 3rem;
+}
+
+.hero-links {
+    font-size: 2rem;
+    /* grid-column: 10; */
+}
+
+.hero-anchor {
+    text-decoration: underline;
+    text-decoration-color: #FF17BE;
+    text-underline-offset: -0.25rem;
+    text-decoration-thickness: .5rem;
+    text-decoration-skip-ink: none;
+}
+
+.hero-anchor:hover {
+    text-decoration-color: #02b35d;
+}
+
+/* ABOUT ME */
+
+.section-heading {
+    color: #221D31;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+}
+
+
+/* CONTACT */
+
+
+.contact {
+    margin-top: 100px;
+    background-color: rgb(34,29,49);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+}
+
+.contact-heading {
+    color: #fcf4f8;
+}
+
+.contact-text {
+    color: #fcf4f8;
+    font-size: 1.5rem;
+    /* margin: 6px 6px; */
 }

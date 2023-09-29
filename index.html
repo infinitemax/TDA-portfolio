@@ -6,18 +6,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Max Brookman-Byrne portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <section class="hero h-[120vh]">
-        <h1>Max BB</h1>
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1072" viewBox="0 0 1440 1072" fill="none">
-            <path d="M0 0H1440V972.052L0 1072V0Z" fill="#221D31" />
-        </svg> -->
+    <section class="navbar">
+        <nav class="nav-bar fixed z-10 w-full">
+            <div class="max-w-[1200px] flex flex-wrap items-center justify-between mx-auto py-2 px-4">
+                <a href="https://flowbite.com/" class="flex items-center">
+                    <span class="nav-title self-center whitespace-nowrap dark:text-white">MBB</span>
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 ">
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">CV</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </section>
+    <section>
+        <div class="hero h-[120vh]">
+            <div class="max-w-[1200px] mx-auto px-4 grid grid-cols-2 md:grid-cols-12 lg:pt-48 static">
+                <div class="hero-text col-span-2 md:col-span-6 grid items-end h-28 relative top-[100px]">
+                    <h1 class="hero-title hero-text align-bottom text-right">MAX <span
+                            class="bb-name">BROOKMAN-BYRNE</span></h1>
+                    <h2 class="text-right">Full-stack developer</h2>
+                </div>
+                <div class="col-span-4 col-start-9 static">
+                    <img src="images/new-laptop-with-sparkle.png" alt="" class="relative top-[20px] right-[20px]">
+                </div>
+
+            </div>
+
+            <div class="max-w-[1200px] mx-auto mt-24 px-12 hero-links hero-text flex justify-between">
+                <p class="inline">Learn more <a class="hero-anchor" href="#about-me">about me</a></p>
+                <p class="inline">Check out my <a class="hero-anchor" href="#projects">projects</a></p>
+                <p class="inline"><a class="hero-anchor" href="#contact-h1">Get in touch!</a></p>
+
+            </div>
+        </div>
+
+
     </section>
 
-    <section class="about-m h-[120vh]"></section>
+    <section class="about-me min-h-[80vh]" id="about-me">
+        <div class="max-w-[1200px] mx-auto px-4 grid grid-cols-12">
+            <div class="col-span-12 mt-6">
+                <img src="images/coffee-cup-sml.png" alt="" class="mx-auto w-[120px]">
+            </div>
+            <h2 class="col-span-12 text-center section-heading mt-6">About me</h2>
+            <p class="col-span-6 col-start-2 mt-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+                velit provident corporis, beatae repellendus, deleniti nam eius atque enim facere sint numquam
+                exercitationem veritatis quaerat illum rem quidem alias amet? Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Molestias, accusamus cum! Reprehenderit quibusdam similique enim at officiis, libero
+                totam neque nesciunt omnis incidunt optio, quis laudantium, dolore impedit eos! Iusto!</p>
+            <img src="images/WhatsApp Image 2023-08-31 at 13.40.02.jpeg" alt=""
+                class="mt-12 min-w-[200px] col-start-10 image-borders">
+        </div>
+    </section>
+
+    <section class="projects min-h-[100vh]" id="projects">
+        <div class="col-span-12 mt-6">
+            <img src="images/notebook-sml.png" alt="" class="mx-auto w-[120px]">
+        </div>
+        <div class="max-w-[1200px] mx-auto px-4 grid grid-cols-12 gap-y-12">
+            <h2 class="col-span-12 text-center section-heading mt-6">Projects</h2>
+            <div class="col-span-5 col-start-2">
+                <h3>The Slug Game</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti esse tempora dolores veritatis
+                    obcaecati architecto repudiandae ab, culpa inventore eveniet. Harum maiores fugiat quae dolore sit
+                    accusantium numquam magni consectetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Eaque adipisci laboriosam nam amet nostrum pariatur reprehenderit in obcaecati eos hic aspernatur,
+                    veniam deserunt error minima dolores aliquam ducimus sapiente vel!</p>
+            </div>
+            <a href="https://the-slug-game.onrender.com/" class="col-start-8"><img src="images/Slug game.png" alt=""
+                    class="min-w-[400px]"></a>
+            <a href="https://the-slug-game.onrender.com/" class="col-start-2"><img src="images/Caesar cypher.png" alt=""
+                    class="min-w-[400px] col-start-2 mt-8"></a>
+            <div class="col-span-5 col-start-7 mt-8">
+                <h3>Caesar cipher</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti esse tempora dolores veritatis
+                    obcaecati architecto repudiandae ab, culpa inventore eveniet. Harum maiores fugiat quae dolore sit
+                    accusantium numquam magni consectetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Eaque adipisci laboriosam nam amet nostrum pariatur reprehenderit in obcaecati eos hic aspernatur,
+                    veniam deserunt error minima dolores aliquam ducimus sapiente vel!</p>
+            </div>
+        </div>
+        <div class="col-span-12 mt-28">
+            <img src="images/climbing-shoe.png" alt="" class="mx-auto w-[120px]">
+        </div>
+    </section>
+
+    <section class="contact min-h-[120vh]" id="contact">
+        <div class="max-w-[1200px] mx-auto px-4 grid grid-cols-12">
+            <h2 class="col-span-12 text-center section-heading mt-12 contact-heading pt-24" id="contact-h1">Contact me
+            </h2>
+            <div class="col-span-12 mt-12">
+                <form action="#" class="w-96 mx-auto">
+                    <div>
+                        <label for="email" class="contact-text">Your email</label>
+                        <input type="email" id="email"
+                            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                            placeholder="name@flowbite.com" required>
+                    </div>
+                    <div>
+                        <label for="subject" class="contact-text">Subject</label>
+                        <input type="text" id="subject"
+                            class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                            placeholder="Let us know how we can help you" required>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="message" class="contact-text">Your message</label>
+                        <textarea id="message" rows="6"
+                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                            placeholder="Leave a comment..."></textarea>
+                    </div>
+                    <button type="submit"
+                        class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send
+                        message</button>
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
