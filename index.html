@@ -31,33 +31,6 @@
 
 
 
-        <nav class="nav-bar z-10 w-full absolute">
-            <div class="max-w-[550px] flex flex-wrap items-center justify-between mx-auto py-2 px-4">
-                <div class="w-full " id="navbar-default">
-                    <ul class="text-xl flex flex-row p-4 md:p-0 justify-between">
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-gray-900 rounded md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent nav-link">About</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">CV</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-    </section> -->
 
     <section>
         <div class="hero min-h-[120vh] w-full pb-32">
@@ -118,23 +91,9 @@
             </div>
         </div>
         <h2 class="col-span-2 lg:col-span-12 text-center section-heading mt-6">Projects</h2>
-
-
-
-
-
-
-
-
-
-
-        <!-- <div class="mt-6">
-            <img src="images/notebook-sml.png" alt="" class="mx-auto w-[120px]">
-        </div>
-        <h2 class="text-center section-heading mt-6 mb-16 lg:mb-24 ">Projects</h2>
-        <div>
+        <div class="col-span-2 md:col-span-1 lg:col-span-6 lg:col-start-2 mx-auto lg:mt-12">
             <div
-                class="max-w-[1200px] mx-4 sm:mx-8 md:mx-12 lg:mx-auto lg:px-24 grid md:grid-cols-2 lg:grid-cols-12 gap-x-8">
+                class="max-w-[1200px] mx-4 sm:mx-8 md:mx-12 lg:mx-auto lg:px-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-x-8">
                 <h3 class="md:col-span-2 lg:hidden mx-auto">The Slug Game</h3>
                 <div class="lg:col-span-6 lg:col-start-1">
                     <h3 class="hidden lg:inline-block">The Slug Game</h3>
@@ -146,14 +105,15 @@
                     <p>The game was styled using Tailwind and has been hosted on Render. Click the image to have a go!
                     </p>
                 </div>
-                <div class="lg:col-start-7 lg:col-span-6 md:mb-24 lg:mb-32">
+                <div class="max-w-[400px] lg:col-start-7 lg:col-span-6 md:mb-24 lg:mb-32 mx-auto mt-12 md:mt-0">
                     <a href="https://the-slug-game.onrender.com/"><img src="images/Slug game.png" alt=""
-                            class="lg:w-[400px] mx-auto"></a>
+                            class="  lg:mt-4 pb-8 md:pb-0"></a>
                 </div>
+
                 <h3 class="md:col-span-2 lg:hidden mx-auto mt-24 md:mt-0">The Caesar Cipher</h3>
-                <div class="w-[300px] mx-auto md:w-full lg:col-span-5 lg:pt-4 mb-12 md:mb-0">
+                <div class="w-[300px] mx-auto md:w-full lg:col-span-5 lg:pt-4 mb-4 md:mb-12 md:mb-0 mx-auto hidden md:inline-block">
                     <a href="https://infinitemax.github.io/TDA-caesar-cipher/" class=""><img
-                            src="images/Caesar cypher.png" alt="" class="lg:w-[350px] mx-auto"></a>
+                            src="images/Caesar cypher.png" alt="" class="lg:w-[350px] "></a>
                 </div>
                 <div class="lg:col-span-7 lg:col-start-6 lg:pr-8">
                     <h3 class="hidden lg:inline-block">The Caesar Cipher</h3>
@@ -166,8 +126,16 @@
                         by the recipient</p>
                     <p>The app was styled with Tailwind to give a modern, Wes Anderson-esque feel.</p>
                 </div>
-            </div>
-        </div> -->
+                <div class="max-w-[400px] md:hidden mx-auto md:w-full lg:col-span-5 lg:pt-4 mb-4 md:mb-12 md:mb-0 mt-12">
+                    <a href="https://infinitemax.github.io/TDA-caesar-cipher/" class=""><img
+                            src="images/Caesar cypher.png" alt="" class="lg:w-[350px]"></a>
+                </div>
+
+
+
+        </div>
+
+
 
 
 
@@ -178,32 +146,13 @@
 
     <section class="contact min-h-[120vh]" id="contact">
         <div class="max-w-[1200px] mx-auto px-4 grid grid-cols-12">
-            <h2 class="col-span-12 text-center section-heading mt-12 contact-heading pt-24" id="contact-h1">Contact me
+            <h2 class="col-span-12 text-center section-heading mt-12 contact-heading pt-24" id="contact-h1">Contact
             </h2>
-            <div class="col-span-12 mt-12">
-                <!-- <form action="#" class="w-96 mx-auto">
-                    <div>
-                        <label for="email" class="contact-text">Your email</label>
-                        <input type="email" id="email"
-                            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                            placeholder="name@email.com" required>
-                    </div>
-                    <div>
-                        <label for="subject" class="contact-text">Subject</label>
-                        <input type="text" id="subject"
-                            class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                            placeholder="Exciting subject..." required>
-                    </div>
-                    <div class="sm:col-span-2">
-                        <label for="message" class="contact-text">Your message</label>
-                        <textarea id="message" rows="6"
-                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                            placeholder="Exciting message..."></textarea>
-                    </div>
-                    <button type="submit"
-                        class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send
-                        message</button>
-                </form> -->
+            <div class="col-span-12 mt-12 flex flex-col items-center text-slate-200">
+                <h3 class="text-2xl mb-8">Coming soon, a wonderful contact form...</h3>
+                <p class="text-xl mb-8">In the meantime, please conatct me via:</p>
+                <a class="text-xl font-bold" href="https://www.linkedin.com/in/max-brookman-byrne-8b58998b/">LinkedIn</a>
+                
             </div>
         </div>
     </section>
