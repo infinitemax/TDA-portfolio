@@ -10,44 +10,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <section class="navbar">
-        <nav class="nav-bar fixed z-10 w-full">
-            <div class="max-w-[1200px] flex flex-wrap items-center justify-between mx-auto py-2 px-4">
-                <a href="https://infinitemax.github.io/TDA-portfolio/" class="flex items-center">
-                    <span class="nav-title self-center whitespace-nowrap text-white">MBB</span>
-                </a>
-                <button data-collapse-toggle="navbar-default" type="button"
-                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                    aria-controls="navbar-default" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 17 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 1h15M1 7h15M1 13h15" />
-                    </svg>
-                </button>
-                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                    <ul
-                        class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 ">
+
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav-container">
+        <div class="topnav" id="myTopnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+          </div>
+    </div>
+
+
+
+        <nav class="nav-bar z-10 w-full absolute">
+            <div class="max-w-[550px] flex flex-wrap items-center justify-between mx-auto py-2 px-4">
+                <div class="w-full " id="navbar-default">
+                    <ul class="text-xl flex flex-row p-4 md:p-0 justify-between">
                         <li>
                             <a href="#"
-                                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent  md:p-0 dark:text-white nav-selected "
-                                aria-current="page">Home</a>
+                                class="block py-2 pl-3 pr-4 text-gray-900 rounded md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent nav-link">About</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="block py-2 pl-3 pr-4 text-gray-900 rounded md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent nav-link">Projects</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">CV</a>
+                                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
                         </li>
                         <li>
                             <a href="#"
                                 class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">CV</a>
                         </li>
 
                     </ul>
@@ -55,31 +57,29 @@
             </div>
         </nav>
 
-    </section>
-    
+    </section> -->
+
     <section>
-        <div class="hero h-[120vh] w-full">
-            <div class="max-w-[1200px] mx-auto px-4 grid grid-cols-2 lg:grid-cols-12 lg:pt-48 lg:pb-8 h-[70vh] content-end">
-                <div class="col-span-2 lg:hidden static ">
-                    <img src="images/new-laptop-with-sparkle inverted.png" alt="" class="w-[250px] mx-auto relative sm:bottom-[70px] md:bottom-[100px]">
+        <div class="hero min-h-[120vh] w-full pb-32">
+            <div
+                class="max-w-[1200px] mx-auto px-4 grid grid-cols-2 lg:grid-cols-12 pt-48 lg:pb-8 min-h-[70vh] content-end">
+                <div class="col-span-2 lg:hidden ">
+                    <img src="images/new-laptop-with-sparkle inverted.png" alt="" class="w-[250px] mx-auto ">
                 </div>
-                <div class="hero-text col-span-2 justify-center lg:col-span-7 grid content-end">
-                    <h1 class="hero-title hero-text lg:text-right">MAX <span
+                <div class="hero-text col-span-2 justify-center lg:col-span-7 grid content-end pt-12">
+                    <h1 class="hero-title hero-text text-center lg:text-right lg:hidden">MAX BROOKMAN-BYRNE</h1>
+                    <h1 class="hero-title hero-text lg:text-right hidden lg:inline-block">MAX <span
                             class="bb-name">BROOKMAN-BYRNE</span></h1>
-                    <h2 class="text-center lg:text-right">Full-stack developer</h2>
+                    <h2 class="text-center lg:text-right sm:pt-12 stand-first">Web developer</h2>
                 </div>
                 <div class="col-span-4 col-start-9 hidden lg:inline-block static">
-                    <img src="images/new-laptop-with-sparkle.png" alt="" class="min-w-[300px]  md:relative md:top-[20px] md:right-[20px]">
+                    <img src="images/new-laptop-with-sparkle.png" alt=""
+                        class="min-w-[300px]  md:relative md:top-[20px] md:right-[20px]">
                 </div>
 
             </div>
 
-            <div class="max-w-[1200px] mx-[20%] lg:mx-auto mt-16 lg:mt-24 md:px-12 hero-links hero-text flex flex-col lg:flex-row lg:justify-between">
-                <p class="md:inline">Learn more <a class="hero-anchor" href="#about-me">about me</a></p>
-                <p class="md:inline">Check out my <a class="hero-anchor" href="#projects">projects</a></p>
-                <p class="md:inline"><a class="hero-anchor" href="#contact-h1">Get in touch!</a></p>
 
-            </div>
         </div>
 
 
@@ -88,53 +88,89 @@
     <section class="content min-h-[80vh]" id="about-me">
         <div class="max-w-[1200px] sm:mx-8 md:mx-12 lg:mx-auto px-4 grid md:grid-cols-2 lg:grid-cols-12">
             <div class="col-span-2 lg:col-span-12 mt-6">
-                <img src="images/coffee-cup-sml.png" alt="" class="mx-auto w-[120px]">
+                <img src="images/coffee-cup-sml.png" alt="" class="mx-auto w-[110px]">
             </div>
             <h2 class="col-span-2 lg:col-span-12 text-center section-heading mt-6">About me</h2>
             <div class="col-span-2 md:col-span-1 lg:col-span-6 lg:col-start-2 mx-auto md:mt-12">
-                <img src="images/WhatsApp Image 2023-08-31 at 13.40.02.jpeg" alt="" class="w-[150px] mx-auto my-6 md:hidden rounded-full">
+                <img src="images/WhatsApp Image 2023-08-31 at 13.40.02.jpeg" alt=""
+                    class="w-[150px] mx-auto my-6 md:hidden rounded-full">
                 <p>Hi, I'm Max. Thanks for visiting my website!</p>
-                <p>I'm a full-stack web developer, based in Sheffield. I enjoy building accessible and effective web applications and sites that also happen to be beautiful to look at.</p>
-                <p>I'm proficient in JavaScript, CSS and HTML, as well as core frameworks and libraries such as React, Next.js, Node, Tailwind and Bootstrap.</p>
-                <p>Prior to focusing on web development full time I worked in the higher education sector as a Senior Lecturer in Law, most recently at the University of Lincoln where I conducted research and directed several degree courses.</p>
+                <p>I'm a full-stack web developer, based in Sheffield. I enjoy building accessible and effective web
+                    applications and sites that also happen to be beautiful to look at.</p>
+                <p>I'm proficient in JavaScript, CSS and HTML, as well as core frameworks and libraries such as React,
+                    Next.js, Node, Tailwind and Bootstrap.</p>
+                <p>Prior to focusing on web development full time I worked in the higher education sector as a Senior
+                    Lecturer in Law, most recently at the University of Lincoln where I conducted research and directed
+                    several degree courses.</p>
                 <p>As such I will bring both technical and soft skills to your project.</p>
-            </div>           
+            </div>
             <div class="mt-12 lg:col-start-9 lg:col-span-3 ml-10 hidden md:inline-block">
-                <img src="images/WhatsApp Image 2023-08-31 at 13.40.02.jpeg" alt="" class="sm:w-[190px] md:w-[220px] max-w-[250px] mx-auto">
+                <img src="images/WhatsApp Image 2023-08-31 at 13.40.02.jpeg" alt=""
+                    class="sm:w-[190px] md:w-[220px] max-w-[250px] mx-auto">
             </div>
         </div>
     </section>
 
     <section class="content projects min-h-[100vh]" id="projects">
-        <div class="mt-6">
+        <div class="max-w-[1200px] sm:mx-8 md:mx-12 lg:mx-auto px-4 grid md:grid-cols-2 lg:grid-cols-12">
+            <div class="col-span-2 lg:col-span-12 mt-6">
+                <img src="images/notebook-sml.png" alt="" class="mx-auto w-[120px]">
+            </div>
+        </div>
+        <h2 class="col-span-2 lg:col-span-12 text-center section-heading mt-6">Projects</h2>
+
+
+
+
+
+
+
+
+
+
+        <!-- <div class="mt-6">
             <img src="images/notebook-sml.png" alt="" class="mx-auto w-[120px]">
         </div>
         <h2 class="text-center section-heading mt-6 mb-16 lg:mb-24 ">Projects</h2>
-        <div class="max-w-[1200px] mx-4 sm:mx-8 md:mx-12 lg:mx-auto lg:px-24 grid md:grid-cols-2 lg:grid-cols-12 gap-x-8">
-            <h3 class="md:col-span-2 lg:hidden mx-auto">The Slug Game</h3>
-            <div class="lg:col-span-6 lg:col-start-1">
-                <h3 class="hidden lg:inline-block">The Slug Game</h3>
-                <p>A text-based adventure game, in which you play the role of an intrepid slug, making its way through a drafty victorian terrace in Sheffield.</p>
-                <p>The game is coded with vanilla JavaScript and contains logic to manage a moisture level which reacts to in-game events, enemies to avoid, power-ups and items to collect, and friends to converse with.</p>
-                <p>The game was styled using Tailwind and has been hosted on Render. Click the image to have a go!</p>
+        <div>
+            <div
+                class="max-w-[1200px] mx-4 sm:mx-8 md:mx-12 lg:mx-auto lg:px-24 grid md:grid-cols-2 lg:grid-cols-12 gap-x-8">
+                <h3 class="md:col-span-2 lg:hidden mx-auto">The Slug Game</h3>
+                <div class="lg:col-span-6 lg:col-start-1">
+                    <h3 class="hidden lg:inline-block">The Slug Game</h3>
+                    <p>A text-based adventure game, in which you play the role of an intrepid slug, making its way
+                        through a drafty victorian terrace in Sheffield.</p>
+                    <p>The game is coded with vanilla JavaScript and contains logic to manage a moisture level which
+                        reacts to in-game events, enemies to avoid, power-ups and items to collect, and friends to
+                        converse with.</p>
+                    <p>The game was styled using Tailwind and has been hosted on Render. Click the image to have a go!
+                    </p>
+                </div>
+                <div class="lg:col-start-7 lg:col-span-6 md:mb-24 lg:mb-32">
+                    <a href="https://the-slug-game.onrender.com/"><img src="images/Slug game.png" alt=""
+                            class="lg:w-[400px] mx-auto"></a>
+                </div>
+                <h3 class="md:col-span-2 lg:hidden mx-auto mt-24 md:mt-0">The Caesar Cipher</h3>
+                <div class="w-[300px] mx-auto md:w-full lg:col-span-5 lg:pt-4 mb-12 md:mb-0">
+                    <a href="https://infinitemax.github.io/TDA-caesar-cipher/" class=""><img
+                            src="images/Caesar cypher.png" alt="" class="lg:w-[350px] mx-auto"></a>
+                </div>
+                <div class="lg:col-span-7 lg:col-start-6 lg:pr-8">
+                    <h3 class="hidden lg:inline-block">The Caesar Cipher</h3>
+                    <p>A classic programming challenge, carried out while I was at The Developer Academy. This web app
+                        will take a message from the user, and then output an encoded version of the message.</p>
+                    <p>Using JavaScript, the app uses a "shift" specified by the user to change each letter of the text
+                        by a given number of positions in the alphabet.</p>
+                    <p>Building on the initial brief, I added an "increment" input, which changes the shift by a given
+                        amount per letter. In addition I added a decrypt function so that coded messages can be decoded
+                        by the recipient</p>
+                    <p>The app was styled with Tailwind to give a modern, Wes Anderson-esque feel.</p>
+                </div>
             </div>
-            <div class="lg:col-start-7 lg:col-span-6 md:mb-24 lg:mb-32">
-                <a href="https://the-slug-game.onrender.com/" ><img src="images/Slug game.png" alt=""
-                        class="lg:w-[400px] mx-auto"></a>
-            </div>
-            <h3 class="md:col-span-2 lg:hidden mx-auto mt-24 md:mt-0">The Caesar Cipher</h3>
-            <div class="w-[300px] mx-auto md:w-full lg:col-span-5 lg:pt-4 mb-12 md:mb-0">
-                <a href="https://infinitemax.github.io/TDA-caesar-cipher/" class=""><img src="images/Caesar cypher.png" alt=""
-                        class="lg:w-[350px] mx-auto"></a>
-            </div>
-            <div class="lg:col-span-7 lg:col-start-6 lg:pr-8">
-                <h3 class="hidden lg:inline-block">The Caesar Cipher</h3>
-                <p>A classic programming challenge, carried out while I was at The Developer Academy. This web app will take a message from the user, and then output an encoded version of the message.</p>
-                <p>Using JavaScript, the app uses a "shift" specified by the user to change each letter of the text by a given number of positions in the alphabet.</p>
-                <p>Building on the initial brief, I added an "increment" input, which changes the shift by a given amount per letter. In addition I added a decrypt function so that coded messages can be decoded by the recipient</p>
-                <p>The app was styled with Tailwind to give a modern, Wes Anderson-esque feel.</p>
-            </div>
-        </div>
+        </div> -->
+
+
+
         <div class="md:col-span-12 mt-28">
             <img src="images/climbing-shoe.png" alt="" class="mx-auto w-[120px]">
         </div>
@@ -145,7 +181,7 @@
             <h2 class="col-span-12 text-center section-heading mt-12 contact-heading pt-24" id="contact-h1">Contact me
             </h2>
             <div class="col-span-12 mt-12">
-                <form action="#" class="w-96 mx-auto">
+                <!-- <form action="#" class="w-96 mx-auto">
                     <div>
                         <label for="email" class="contact-text">Your email</label>
                         <input type="email" id="email"
@@ -167,10 +203,12 @@
                     <button type="submit"
                         class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send
                         message</button>
-                </form>
+                </form> -->
             </div>
         </div>
     </section>
 </body>
+
+<script src="index.js"></script>
 
 </html>
