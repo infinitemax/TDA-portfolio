@@ -10,6 +10,10 @@ Colours:
 
 /* W3Schools navbar */
 
+html {
+  scroll-behavior: smooth;
+}
+
 .topnav-container {
   position: relative;
 }
