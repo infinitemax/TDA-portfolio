@@ -22,15 +22,17 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
-            <a href="#about-me" class="active">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#about-me" class="nav-a">About</a>
+            <a href="#projects" class="nav-a">Projects</a>
+            <a href="#contact" class="nav-a">Contact</a>
             <a
-                href="https://docs.google.com/document/d/1F0kTSs5MllLDHj4yL4_FYT1Jq-L1IQNwIeddChTvXio/edit?usp=sharing">CV</a>
+                href="https://docs.google.com/document/d/1F0kTSs5MllLDHj4yL4_FYT1Jq-L1IQNwIeddChTvXio/edit?usp=sharing" class="nav-a" target="_blank" rel="noreferrer noopener">CV</a>
         </div>
     </div>
 
-
+    <div>
+        <a href="#page"><button class="" id="toTopBtn" onclick="backToTop()">Back to top</button></a>
+    </div>
 
 
     <section>
@@ -232,22 +234,26 @@
     </section>
 
     <section class="contact min-h-[10vh]" id="contact">
-        <div class="max-w-[1200px] mx-auto pt-4 pb-36 grid grid-cols-12">
-            <h2 class="col-span-12 text-center section-heading mt-8 contact-heading pt-12" id="contact-h1">Contact
+        <div class="max-w-[1200px] mx-auto pt-4 pb-36 flex flex-col">
+            <h2 class="text-center section-heading mt-8 contact-heading pt-12" id="contact-h1">Contact
             </h2>
-            <div class="col-span-12 mt-12 flex flex-col items-center text-slate-200">
+            <div class="mt-12 flex flex-col items-center text-slate-200">
                 <h3 class="text-xl sm:text-2xl mb-6 mx-4 text-center">Please contact me by email at:</h3>
                 <p class="sm:text-xl mb-8">m.brookman.byrne@gmail.com</p>
                 <p>You can also find me on:</p>
                 <p class="pt-4 text-center">
-                    <a class="text-xl font-bold px-4"
+                    <a class="text-xl font-bold px-4 nav-a"
                         href="https://www.linkedin.com/in/max-brookman-byrne-8b58998b/">LinkedIn</a> ||
-                    <a class="text-xl font-bold px-4" href="https://github.com/infinitemax">GitHub</a> ||
-                    <a class="text-xl font-bold px-4" href="https://www.codu.co/infinitemax">Codú</a>
+                    <a class="text-xl font-bold px-4 nav-a" href="https://github.com/infinitemax">GitHub</a> ||
+                    <a class="text-xl font-bold px-4 nav-a" href="https://www.codu.co/infinitemax">Codú</a>
                 </p>
 
 
             </div>
+
+
+            
+            
         </div>
     </section>
 </body>
