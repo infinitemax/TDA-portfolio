@@ -39,7 +39,7 @@ html {
   transition: transform 0.3s ease;
 }
 
-a:hover::before {
+.nav-a:hover::before {
   transform: scaleX(0.8);
 }
 
@@ -116,6 +116,29 @@ a:hover::before {
     text-align: center;
     width: 100%;
     font-size: 1.2rem;
+  }
+}
+
+/* BACK TO TOP BUTTON */
+
+#toTopBtn {
+  
+  background-color: rgb(58, 6, 101, 1);
+  color: white;
+  z-index: 99;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  cursor:pointer;
+  padding: 20px 10px 20px 20px;
+  border-radius: 40px 0 0 0;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+  #toTopBtn {
+    padding: 8px 8px 8px 20px;
   }
 }
 
