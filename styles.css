@@ -8,14 +8,39 @@ Colours:
 
 */
 
-/* W3Schools navbar */
-
 html {
   scroll-behavior: smooth;
 }
 
+/* W3Schools navbar */
+
 .topnav-container {
   position: relative;
+}
+
+/* Navbar hover effects */
+
+.nav-a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0px;
+  left: 0;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-a:hover::before {
+  transform: scaleX(0.8);
 }
 
 /* Add a black background color to the top navigation */
@@ -34,7 +59,7 @@ html {
   text-align: center;
   padding: 8px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.5rem;
 }
 
 /* Change the color of links on hover */
@@ -90,6 +115,30 @@ html {
     display: block;
     text-align: center;
     width: 100%;
+    font-size: 1.2rem;
+  }
+}
+
+/* BACK TO TOP BUTTON */
+
+#toTopBtn {
+  
+  background-color: rgb(58, 6, 101, 1);
+  color: white;
+  z-index: 99;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  cursor:pointer;
+  padding: 20px 10px 20px 20px;
+  border-radius: 40px 0 0 0;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+  #toTopBtn {
+    padding: 8px 8px 8px 20px;
   }
 }
 
